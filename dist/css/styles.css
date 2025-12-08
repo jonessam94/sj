@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Agency v6.0.2 (https://startbootstrap.com/template-overviews/agency)
-* Copyright 2013-2020 Start Bootstrap
+* Copyright 2013-2025 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
 */
 /*!
@@ -10502,4 +10502,356 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#dashboard-page {
+  background-color: #f8f9fa;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.dashboard-nav {
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.dashboard-nav .navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000;
+}
+.dashboard-nav .navbar-brand .brand-text {
+  color: #000;
+}
+.dashboard-nav .navbar-brand .brand-registered {
+  font-size: 0.7rem;
+  vertical-align: super;
+}
+.dashboard-nav .navbar-toggler .menu-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.diary-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.analytics-section .row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.analytics-section .row > [class*=col-] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.metric-card {
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  min-height: 180px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+.metric-card .card-header-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+.metric-card .card-main-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.metric-card .card-sub-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.metric-card .card-trend {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+.metric-card .card-trend .trend-icon {
+  font-size: 0.8rem;
+}
+.metric-card .card-trend .trend-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.metric-card .card-chart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  opacity: 0.6;
+}
+.metric-card .card-chart svg {
+  width: 100%;
+  height: 100%;
+}
+
+.metric-card-purple {
+  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+  color: white;
+}
+
+.metric-card-yellow {
+  background: linear-gradient(135deg, #fde68a 0%, #fbbf24 100%);
+  color: #000;
+}
+
+.metric-card-pink {
+  background: linear-gradient(135deg, #f9a8d4 0%, #ec4899 100%);
+  color: #000;
+}
+
+.metric-card-coral {
+  background: linear-gradient(135deg, #fca5a5 0%, #f87171 100%);
+  color: white;
+}
+
+.metric-card-green {
+  background: linear-gradient(135deg, #86efac 0%, #4ade80 100%);
+  color: white;
+}
+
+.metric-card-lavender {
+  background: linear-gradient(135deg, #ddd6fe 0%, #a78bfa 100%);
+  color: white;
+}
+
+.child-profile-section .profile-card {
+  background: white;
+  border-radius: 2rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.child-profile-section .profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.child-profile-section .profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child-profile-section .profile-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.child-profile-section .profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+.child-profile-section .profile-subtitle {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-bottom: 0;
+}
+
+.progress-section {
+  border: 2px dashed #e5e7eb;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.progress-section .progress-item .progress-label {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+.progress-section .progress-item .progress-value-container {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.progress-section .progress-item .progress-value-container .progress-main-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+}
+.progress-section .progress-item .progress-value-container .progress-goal-value {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+.progress-section .progress-item .progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background: linear-gradient(90deg, #a78bfa 0%, #fbbf24 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.progress-section .progress-item .progress-bar-container .progress-bar-fill {
+  height: 100%;
+  background: transparent;
+}
+
+.diary-section {
+  background: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.diary-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.diary-tabs .diary-tab {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #f3f4f6;
+  border-radius: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.diary-tabs .diary-tab:hover {
+  background: #e5e7eb;
+}
+.diary-tabs .diary-tab.active {
+  background: white;
+  color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.diary-timeline .diary-entry {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.diary-timeline .diary-entry:last-child {
+  margin-bottom: 0;
+}
+.diary-timeline .diary-entry:last-child .entry-line {
+  display: none;
+}
+.diary-timeline .diary-entry .entry-time-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40px;
+}
+.diary-timeline .diary-entry .entry-time-left .entry-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+.diary-timeline .diary-entry .entry-time-left .entry-line {
+  width: 2px;
+  flex: 1;
+  background: repeating-linear-gradient(to bottom, #e5e7eb, #e5e7eb 5px, transparent 5px, transparent 10px);
+  margin-top: 0.5rem;
+  min-height: 40px;
+}
+.diary-timeline .diary-entry .entry-content {
+  flex: 1;
+  padding-top: 0.25rem;
+}
+.diary-timeline .diary-entry .entry-content .entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.diary-timeline .diary-entry .entry-content .entry-header .entry-timestamp {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+.diary-timeline .diary-entry .entry-content .entry-header .entry-time {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+.diary-timeline .diary-entry .entry-content .entry-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.25rem;
+}
+.diary-timeline .diary-entry .entry-content .entry-value {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .metric-card {
+    min-height: 160px;
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+  }
+
+  .diary-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .diary-tabs .diary-tab {
+    white-space: nowrap;
+  }
+}
+.g-3 {
+  gap: 1rem;
+}
+
+.row.g-3 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.row.g-3 > [class*=col-] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
 }

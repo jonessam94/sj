@@ -1,0 +1,185 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='Mivo - Children\'s Medication, Symptom and Temperature Tracker')
+        meta(name='author', content='')
+
+        title Mivo - Dashboard
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#dashboard-page
+
+        // Navigation
+        nav.navbar.navbar-light.bg-white.fixed-top.dashboard-nav
+            .container-fluid.px-4
+                a.navbar-brand(href='#')
+                    span.brand-text Mivo
+                    span.brand-registered ®
+                button.navbar-toggler.border-0(type='button')
+                    span.menu-text
+                        i.fas.fa-bars.mr-2
+                        | Menu
+
+        // Dashboard Content
+        .dashboard-container
+            .container-fluid.px-4.py-5.mt-5
+
+                // Analytics Section
+                section.analytics-section.mb-5
+                    h1.section-title.mb-4 Analytics
+
+                    .row.g-3
+                        .col-md-6.col-lg-3
+                            .metric-card.metric-card-purple
+                                .card-header-text Temperature
+                                .card-main-value 37.2°C
+                                .card-trend
+                                    i.fas.fa-arrow-down.trend-icon
+                                    span.trend-text 0.3°C
+                                .card-chart
+                                    // Placeholder for chart
+                                    svg(viewBox='0 0 100 30', preserveAspectRatio='none')
+                                        path(d='M0,15 Q25,10 50,12 T100,15', stroke='rgba(255,255,255,0.5)', stroke-width='2', fill='none')
+
+                        .col-md-6.col-lg-3
+                            .metric-card.metric-card-yellow
+                                .card-header-text Medication
+                                .card-main-value Next in 2hrs
+                                .card-sub-value 5ml Calpol
+
+                        .col-md-6.col-lg-3
+                            .metric-card.metric-card-pink
+                                .card-header-text Symptoms
+                                .card-main-value 3 tracked
+                                .card-sub-value in 24 hours
+
+                        .col-md-6.col-lg-3
+                            .metric-card.metric-card-coral
+                                .card-header-text Activity
+                                .card-main-value
+                                    | Normal
+                                    br
+                                    | Energy
+
+                // Child Profile Section
+                section.child-profile-section.mb-5
+                    .profile-card
+                        .profile-header
+                            .profile-avatar
+                                img(src='assets/img/child-avatar.png', alt='Child Avatar', onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.innerHTML='<span style=\\'font-size:48px\\'>👶</span>'")
+                            h2.profile-name Emma Johnson
+                            p.profile-subtitle Emma Johnson
+
+                        .progress-section.mb-4
+                            .progress-item
+                                .progress-label Sleep progress
+                                .progress-value-container
+                                    .progress-main-value 12h 36m
+                                    .progress-goal-value Goal 13h 00m
+                                .progress-bar-container
+                                    .progress-bar-fill(style='width: 85%')
+
+                        .row.g-3
+                            .col-md-6
+                                .metric-card.metric-card-green
+                                    .card-header-text Weight
+                                    .card-main-value 12.5kg
+                                    .card-trend
+                                        i.fas.fa-arrow-up.trend-icon
+                                        span.trend-text 3.2%
+                                    .card-chart
+                                        svg(viewBox='0 0 100 30', preserveAspectRatio='none')
+                                            path(d='M0,20 Q25,18 50,15 T100,10', stroke='rgba(255,255,255,0.5)', stroke-width='2', fill='none')
+
+                            .col-md-6
+                                .metric-card.metric-card-lavender
+                                    .card-header-text Height
+                                    .card-main-value 85cm
+                                    .card-trend
+                                        i.fas.fa-arrow-up.trend-icon
+                                        span.trend-text 2.1%
+                                    .card-chart
+                                        svg(viewBox='0 0 100 30', preserveAspectRatio='none')
+                                            path(d='M0,20 Q25,17 50,14 T100,8', stroke='rgba(255,255,255,0.5)', stroke-width='2', fill='none')
+
+                // Child's Diary Section
+                section.diary-section
+                    h2.diary-title Child's Diary
+
+                    .diary-tabs.mb-4
+                        button.diary-tab.active Today
+                        button.diary-tab Yesterday
+                        button.diary-tab Week
+                        button.diary-tab Month
+
+                    .diary-timeline
+                        .diary-entry
+                            .entry-time-left
+                                .entry-icon
+                                    i.fas.fa-ellipsis-h
+                                .entry-line
+                            .entry-content
+                                .entry-header
+                                    .entry-timestamp 1h 16min ago
+                                    .entry-time 05:16 pm
+                                .entry-title Temperature
+                                .entry-value 37.2°C
+
+                        .diary-entry
+                            .entry-time-left
+                                .entry-icon
+                                    i.fas.fa-ellipsis-h
+                                .entry-line
+                            .entry-content
+                                .entry-header
+                                    .entry-timestamp 2h 30min ago
+                                    .entry-time 04:02 pm
+                                .entry-title Medication
+                                .entry-value 5ml Calpol
+
+                        .diary-entry
+                            .entry-time-left
+                                .entry-icon
+                                    i.fas.fa-ellipsis-h
+                                .entry-line
+                            .entry-content
+                                .entry-header
+                                    .entry-timestamp 4h 45min ago
+                                    .entry-time 01:47 pm
+                                .entry-title Symptom
+                                .entry-value Fever
+
+                        .diary-entry
+                            .entry-time-left
+                                .entry-icon
+                                    i.fas.fa-ellipsis-h
+                            .entry-content
+                                .entry-header
+                                    .entry-timestamp 6h 12min ago
+                                    .entry-time 12:20 pm
+                                .entry-title Activity
+                                .entry-value Playing quietly
+
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')

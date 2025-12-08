@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Mivo - Children's Medication, Symptom and Temperature Tracker" />
+        <meta name="author" content="" />
+        <title>Mivo - Dashboard</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="dashboard-page">
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-white fixed-top dashboard-nav">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand" href="#">
+                    <span class="brand-text">Mivo</span>
+                    <span class="brand-registered">®</span>
+                </a>
+                <button class="navbar-toggler border-0" type="button">
+                    <span class="menu-text">
+                        <i class="fas fa-bars mr-2"></i>
+                        Menu
+                    </span>
+                </button>
+            </div>
+        </nav>
+        <!-- Dashboard Content-->
+        <div class="dashboard-container">
+            <div class="container-fluid px-4 py-5 mt-5">
+                <!-- Analytics Section-->
+                <section class="analytics-section mb-5">
+                    <h1 class="section-title mb-4">Analytics</h1>
+                    <div class="row g-3">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="metric-card metric-card-purple">
+                                <div class="card-header-text">Temperature</div>
+                                <div class="card-main-value">37.2°C</div>
+                                <div class="card-trend">
+                                    <i class="fas fa-arrow-down trend-icon"></i>
+                                    <span class="trend-text">0.3°C</span>
+                                </div>
+                                <div class="card-chart">
+                                    <!-- Placeholder for chart-->
+                                    <svg viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0,15 Q25,10 50,12 T100,15" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="metric-card metric-card-yellow">
+                                <div class="card-header-text">Medication</div>
+                                <div class="card-main-value">Next in 2hrs</div>
+                                <div class="card-sub-value">5ml Calpol</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="metric-card metric-card-pink">
+                                <div class="card-header-text">Symptoms</div>
+                                <div class="card-main-value">3 tracked</div>
+                                <div class="card-sub-value">in 24 hours</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="metric-card metric-card-coral">
+                                <div class="card-header-text">Activity</div>
+                                <div class="card-main-value">
+                                    Normal
+                                    <br />
+                                    Energy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Child Profile Section-->
+                <section class="child-profile-section mb-5">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <div class="profile-avatar"><img src="assets/img/child-avatar.png" alt="Child Avatar" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.style.display='flex'; this.style.alignItems='center'; this.style.justifyContent='center'; this.innerHTML='&lt;span style=\'font-size:48px\'&gt;👶&lt;/span&gt;'" /></div>
+                            <h2 class="profile-name">Emma Johnson</h2>
+                            <p class="profile-subtitle">Emma Johnson</p>
+                        </div>
+                        <div class="progress-section mb-4">
+                            <div class="progress-item">
+                                <div class="progress-label">Sleep progress</div>
+                                <div class="progress-value-container">
+                                    <div class="progress-main-value">12h 36m</div>
+                                    <div class="progress-goal-value">Goal 13h 00m</div>
+                                </div>
+                                <div class="progress-bar-container"><div class="progress-bar-fill" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="metric-card metric-card-green">
+                                    <div class="card-header-text">Weight</div>
+                                    <div class="card-main-value">12.5kg</div>
+                                    <div class="card-trend">
+                                        <i class="fas fa-arrow-up trend-icon"></i>
+                                        <span class="trend-text">3.2%</span>
+                                    </div>
+                                    <div class="card-chart">
+                                        <svg viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0,20 Q25,18 50,15 T100,10" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="metric-card metric-card-lavender">
+                                    <div class="card-header-text">Height</div>
+                                    <div class="card-main-value">85cm</div>
+                                    <div class="card-trend">
+                                        <i class="fas fa-arrow-up trend-icon"></i>
+                                        <span class="trend-text">2.1%</span>
+                                    </div>
+                                    <div class="card-chart">
+                                        <svg viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M0,20 Q25,17 50,14 T100,8" stroke="rgba(255,255,255,0.5)" stroke-width="2" fill="none"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Child's Diary Section-->
+                <section class="diary-section">
+                    <h2 class="diary-title">Child's Diary</h2>
+                    <div class="diary-tabs mb-4">
+                        <button class="diary-tab active">Today</button>
+                        <button class="diary-tab">Yesterday</button>
+                        <button class="diary-tab">Week</button>
+                        <button class="diary-tab">Month</button>
+                    </div>
+                    <div class="diary-timeline">
+                        <div class="diary-entry">
+                            <div class="entry-time-left">
+                                <div class="entry-icon"><i class="fas fa-ellipsis-h"></i></div>
+                                <div class="entry-line"></div>
+                            </div>
+                            <div class="entry-content">
+                                <div class="entry-header">
+                                    <div class="entry-timestamp">1h 16min ago</div>
+                                    <div class="entry-time">05:16 pm</div>
+                                </div>
+                                <div class="entry-title">Temperature</div>
+                                <div class="entry-value">37.2°C</div>
+                            </div>
+                        </div>
+                        <div class="diary-entry">
+                            <div class="entry-time-left">
+                                <div class="entry-icon"><i class="fas fa-ellipsis-h"></i></div>
+                                <div class="entry-line"></div>
+                            </div>
+                            <div class="entry-content">
+                                <div class="entry-header">
+                                    <div class="entry-timestamp">2h 30min ago</div>
+                                    <div class="entry-time">04:02 pm</div>
+                                </div>
+                                <div class="entry-title">Medication</div>
+                                <div class="entry-value">5ml Calpol</div>
+                            </div>
+                        </div>
+                        <div class="diary-entry">
+                            <div class="entry-time-left">
+                                <div class="entry-icon"><i class="fas fa-ellipsis-h"></i></div>
+                                <div class="entry-line"></div>
+                            </div>
+                            <div class="entry-content">
+                                <div class="entry-header">
+                                    <div class="entry-timestamp">4h 45min ago</div>
+                                    <div class="entry-time">01:47 pm</div>
+                                </div>
+                                <div class="entry-title">Symptom</div>
+                                <div class="entry-value">Fever</div>
+                            </div>
+                        </div>
+                        <div class="diary-entry">
+                            <div class="entry-time-left">
+                                <div class="entry-icon"><i class="fas fa-ellipsis-h"></i></div>
+                            </div>
+                            <div class="entry-content">
+                                <div class="entry-header">
+                                    <div class="entry-timestamp">6h 12min ago</div>
+                                    <div class="entry-time">12:20 pm</div>
+                                </div>
+                                <div class="entry-title">Activity</div>
+                                <div class="entry-value">Playing quietly</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
